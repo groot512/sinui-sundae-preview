@@ -262,6 +262,8 @@ label.check input { margin-top: 4px; accent-color: var(--seal); }
 .biz-info a { color: #E9E2D4; }
 .footer-links { display: flex; gap: 18px; margin: 14px 0; flex-wrap: wrap; }
 .footer-links a { text-decoration: none; }
+.footer-links .admin-link { opacity: .65; }
+.footer-links .admin-link:hover { opacity: 1; text-decoration: underline; }
 .copyright { opacity: .7; }
 
 .toast { position: fixed; left: 50%; bottom: 32px; transform: translate(-50%, 20px); background: var(--ink); color: #fff; padding: 12px 20px; border-radius: 999px; opacity: 0; transition: .25s; z-index: 200; pointer-events: none; }

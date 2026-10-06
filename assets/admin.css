@@ -84,6 +84,11 @@ fieldset.sub { border: 1px dashed var(--line); border-radius: 8px; }
 .status-partial_cancelled, .status-cancel_requested { background: #FBEFE0; color: #9A4A14; }
 .pstatus { font-size: .75rem; font-weight: 700; }
 .pstatus-active { color: var(--ok); } .pstatus-hidden { color: var(--muted); } .pstatus-coming { color: #1F4D7A; } .pstatus-soldout { color: var(--danger); }
+.panel-head { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; margin-bottom: 8px; }
+.panel-head h2 { margin: 0; }
+.tbl input.num-in { width: 110px; text-align: right; margin: 0; display: inline-block; }
+.tbl input.num-in.short { width: 80px; }
+.tbl select { margin: 0; width: auto; }
 .slot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
 .slot { margin: 0; display: flex; flex-direction: column; gap: 10px; }
 .slot h2 { margin: 0; display: flex; gap: 8px; align-items: center; }
