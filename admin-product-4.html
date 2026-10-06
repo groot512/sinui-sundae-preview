@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>상품 수정: 만두순대 | 신의한순대 관리자</title>
+<meta name="csrf-token" content="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/admin.css">
+</head>
+<body><div style="position:sticky;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
+<div class="admin">
+  <aside class="side">
+    <a href="admin.html" class="side-logo">신의한순대<small>관리자</small></a>
+    <nav>
+      <a href="admin.html" class="">대시보드</a><a href="admin-orders.html" class="">주문관리</a><a href="admin-products.html" class="on">상품관리</a><a href="admin-brand-images.html" class="">브랜드 이미지</a><a href="admin-members.html" class="">회원관리</a><a href="admin-leads.html" class="">창업·납품 문의</a><a href="admin-settings.html" class="">쇼핑몰 설정</a>
+    </nav>
+    <div class="side-foot">
+      <a href="index.html" target="_blank" rel="noopener">쇼핑몰 보기 ↗</a>
+      <form method="post" action="#"><input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls"><button type="submit">로그아웃 (admin)</button></form>
+    </div>
+  </aside>
+  <main class="content">
+    <h1>상품 수정: 만두순대</h1>
+    
+    
+  <p><a href="admin-products.html">← 상품 목록</a></p>
+  
+  <form method="post" action="admin-product-4.html" enctype="multipart/form-data" class="panel stack">
+    <input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+    <h2>기본 정보</h2>
+    <div class="row3">
+      <label>상품명*<input name="name" required value="만두순대"></label>
+      <label>URL 슬러그 <small class="muted">(영문/숫자/-)</small><input name="slug" value="mandu-sundae" placeholder="자동 생성"></label>
+      <label>중량 표기<input name="weight_label" value="2kg" placeholder="2kg"></label>
+    </div>
+    <label>한 줄 소개<input name="tagline" value="만두소처럼 꽉 채운 풍부한 맛"></label>
+    <div class="row4">
+      <label>판매가(원)*<input name="price" inputmode="numeric" required value="21800"></label>
+      <label>정가(할인 전, 선택)<input name="list_price" inputmode="numeric" value=""></label>
+      <label>사업자 도매가<input name="wholesale_price" inputmode="numeric" value="16500"></label>
+      <label>재고*<input name="stock" inputmode="numeric" required value="97"></label>
+    </div>
+    <div class="row3">
+      <label>상태<select name="status"><option value="active" selected>판매중</option><option value="soldout" >품절</option><option value="coming" >출시예정</option><option value="hidden" >숨김</option></select></label>
+      <label>분류<select name="category"><option value="sundae" selected>순대</option><option value="sauce" >소스</option></select></label>
+      <label>정렬 순서<input name="sort" inputmode="numeric" value="4"></label>
+    </div>
+
+    <h2>대표 이미지 (첫 번째가 썸네일)</h2>
+    <div class="img-list"><label class="img-item"><img src="assets/products__v2__mandu-sundae__01.jpg" alt=""><span><input type="checkbox" name="remove_images" value="assets/products__v2__mandu-sundae__01.jpg"> 삭제</span></label><label class="img-item"><img src="assets/products__v2__mandu-sundae__02.jpg" alt=""><span><input type="checkbox" name="remove_images" value="assets/products__v2__mandu-sundae__02.jpg"> 삭제</span></label><label class="img-item"><img src="assets/products__v2__mandu-sundae__03.jpg" alt=""><span><input type="checkbox" name="remove_images" value="assets/products__v2__mandu-sundae__03.jpg"> 삭제</span></label><label class="img-item"><img src="assets/products__v2__mandu-sundae__04.jpg" alt=""><span><input type="checkbox" name="remove_images" value="assets/products__v2__mandu-sundae__04.jpg"> 삭제</span></label><label class="img-item"><img src="assets/products__v2__mandu-sundae__05.jpg" alt=""><span><input type="checkbox" name="remove_images" value="assets/products__v2__mandu-sundae__05.jpg"> 삭제</span></label><label class="img-item"><img src="assets/products__v2__mandu-sundae__06.jpg" alt=""><span><input type="checkbox" name="remove_images" value="assets/products__v2__mandu-sundae__06.jpg"> 삭제</span></label></div>
+    <label>이미지 추가 (JPG/PNG/WEBP, 여러 장 가능)<input type="file" name="images" accept="image/jpeg,image/png,image/webp" multiple></label>
+
+    <h2>상세페이지 이미지 (위에서 아래 순서로 노출)</h2>
+    <div class="img-list"><label class="img-item"><img src="assets/products__v2__mandu-sundae__detail.jpg" alt=""><span><input type="checkbox" name="remove_details" value="assets/products__v2__mandu-sundae__detail.jpg"> 삭제</span></label></div>
+    <label>상세 이미지 추가 (긴 이미지는 여러 장으로 나눠 올리면 로딩이 빠릅니다)<input type="file" name="detail_images" accept="image/jpeg,image/png,image/webp" multiple></label>
+    <label>또는 HTML 상세 (상세 이미지가 없을 때만 노출)<textarea name="detail_html" rows="4"></textarea></label>
+
+    <h2>상품정보제공고시 (식품)</h2>
+    <div class="notice-grid">
+      <label>제품명<input name="notice_name" value="만두순대"></label><label>식품의 유형<input name="notice_type" value="즉석조리식품(냉동식품)"></label><label>생산자 및 소재지<input name="notice_producer" value="다윗식품 / 경상북도 청도군 월곡1길 29"></label><label>제조연월일, 소비기한<input name="notice_expiry" value="제조일로부터 1년까지 (제품에 별도 표기)"></label><label>용량(중량)<input name="notice_weight" value="2kg"></label><label class="span2">원재료명 및 함량<textarea name="notice_ingredients" rows="3">돼지소창(국내산) 17.9%, 돼지고기(국내산) 11.9%, 당면(밀, 중국산), 양파, 대파, 돼지지방(돼지고기, 국내산), 마늘, 부추, 숙주, 양배추, 계란, 생강, 당근, 찹쌀, 옥수수전분, 천일염, 후추, L-글루탐산나트륨(향미증진제), 복합조미식품</textarea></label><label>알레르기 유발물질<input name="notice_allergens" value="돼지고기, 대두, 밀, 계란 함유"></label><label>영양성분<input name="notice_nutrition" value="제품 포장 표기 참조"></label><label>유전자변형식품 여부<input name="notice_gmo" value="해당 사항 없음"></label><label>수입식품 여부<input name="notice_imported" value="해당 없음 (국내 제조)"></label><label>보관방법<input name="notice_storage" value="냉동보관 (-18℃ 이하)"></label><label>포장재질<input name="notice_packaging" value="PE(폴리에틸렌)"></label><label class="span2">조리방법<textarea name="notice_cooking" rows="3">[찜기 조리 시] 냉장 또는 유수 해동 후 찜기에 넣고 약 10~15분간 충분히 쪄서 드십시오. [끓는 물 조리 시] 해동 후 진공 포장된 상태 그대로 끓는 물에 넣고 약 10~15분간 데워 드십시오.</textarea></label><label class="span2">주의사항<textarea name="notice_caution" rows="3">이미 냉동되었으니 해동 후 다시 냉동하지 마십시오. 개봉 후에는 변질의 우려가 있으니 가급적 빨리 드십시오. 조리 시 화상에 주의하시기 바랍니다. 본 제품은 공정거래위원회 고시 소비자분쟁해결기준에 의거 교환 또는 보상받을 수 있습니다. 부정·불량식품 신고는 국번없이 1399</textarea></label><label>품목제조보고번호<input name="notice_report_no" value="201801592574"></label><label>소비자상담 전화번호<input name="notice_cs_phone" value="054-372-2325"></label>
+    </div>
+    <div class="btn-row"><button class="btn btn-primary">저장</button></div>
+  </form>
+  </main>
+</div>
+<script src="assets/admin.js" defer></script>
+</body>
+</html>

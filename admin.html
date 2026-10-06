@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>대시보드 | 신의한순대 관리자</title>
+<meta name="csrf-token" content="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/admin.css">
+</head>
+<body><div style="position:sticky;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
+<div class="admin">
+  <aside class="side">
+    <a href="admin.html" class="side-logo">신의한순대<small>관리자</small></a>
+    <nav>
+      <a href="admin.html" class="on">대시보드</a><a href="admin-orders.html" class="">주문관리</a><a href="admin-products.html" class="">상품관리</a><a href="admin-brand-images.html" class="">브랜드 이미지</a><a href="admin-members.html" class="">회원관리</a><a href="admin-leads.html" class="">창업·납품 문의</a><a href="admin-settings.html" class="">쇼핑몰 설정</a>
+    </nav>
+    <div class="side-foot">
+      <a href="index.html" target="_blank" rel="noopener">쇼핑몰 보기 ↗</a>
+      <form method="post" action="#"><input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls"><button type="submit">로그아웃 (admin)</button></form>
+    </div>
+  </aside>
+  <main class="content">
+    <h1>대시보드</h1>
+    
+    
+  <div class="kpis">
+    <a class="kpi" href="admin-orders.html"><span>신규 결제 (출고 대기)</span><strong>2</strong></a>
+    <a class="kpi" href="admin-orders.html"><span>상품준비중</span><strong>0</strong></a>
+    <a class="kpi" href="admin-orders.html"><span>입금대기</span><strong>1</strong></a>
+    <a class="kpi" href="admin-members.html"><span>사업자 승인 대기</span><strong>0</strong></a>
+    <a class="kpi" href="admin-leads.html"><span>신규 문의</span><strong>1</strong></a>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><span>오늘 매출 (결제 기준)</span><strong>130,800원</strong><small>2건</small></div>
+    <div class="kpi"><span>이번 달 매출</span><strong>130,800원</strong><small>2건</small></div>
+    <div class="kpi"><span>회원 수</span><strong>0</strong></div>
+  </div>
+  
+  <div class="panel">
+    <h2>최근 주문</h2>
+    <table class="tbl">
+    <thead><tr><th>주문일시</th><th>주문번호</th><th>주문자</th><th>상품</th><th class="r">결제금액</th><th>결제</th><th>상태</th><th>송장</th></tr></thead>
+    <tbody><tr>
+      
+      <td>2026-10-06 21:52</td>
+      <td><a href="admin-order-3.html">SH261006-2F65D915</a></td>
+      <td>홍길동<br><small class="muted">010-1234-5678</small></td>
+      <td>전통순대</td>
+      <td class="r">24,300원</td>
+      <td>가상계좌</td>
+      <td><span class="status status-waiting_deposit">입금대기</span></td>
+      <td></td>
+    </tr><tr>
+      
+      <td>2026-10-06 21:52</td>
+      <td><a href="admin-order-2.html">SH261006-2A07C71B</a></td>
+      <td>홍길동<br><small class="muted">010-1234-5678</small></td>
+      <td>만두순대</td>
+      <td class="r">65,400원</td>
+      <td>카드</td>
+      <td><span class="status status-paid">결제완료</span></td>
+      <td></td>
+    </tr><tr>
+      
+      <td>2026-10-06 21:52</td>
+      <td><a href="admin-order-1.html">SH261006-79B24C20</a></td>
+      <td>홍길동<br><small class="muted">010-1234-5678</small></td>
+      <td>고기찰순대 외 1건</td>
+      <td class="r">65,400원</td>
+      <td>카드</td>
+      <td><span class="status status-paid">결제완료</span></td>
+      <td></td>
+    </tr></tbody></table>
+  </div>
+  </main>
+</div>
+<script src="assets/admin.js" defer></script>
+</body>
+</html>

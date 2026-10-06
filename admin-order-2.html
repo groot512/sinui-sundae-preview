@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>주문 상세 | 신의한순대 관리자</title>
+<meta name="csrf-token" content="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/admin.css">
+</head>
+<body><div style="position:sticky;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
+<div class="admin">
+  <aside class="side">
+    <a href="admin.html" class="side-logo">신의한순대<small>관리자</small></a>
+    <nav>
+      <a href="admin.html" class="">대시보드</a><a href="admin-orders.html" class="on">주문관리</a><a href="admin-products.html" class="">상품관리</a><a href="admin-brand-images.html" class="">브랜드 이미지</a><a href="admin-members.html" class="">회원관리</a><a href="admin-leads.html" class="">창업·납품 문의</a><a href="admin-settings.html" class="">쇼핑몰 설정</a>
+    </nav>
+    <div class="side-foot">
+      <a href="index.html" target="_blank" rel="noopener">쇼핑몰 보기 ↗</a>
+      <form method="post" action="#"><input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls"><button type="submit">로그아웃 (admin)</button></form>
+    </div>
+  </aside>
+  <main class="content">
+    <h1>주문 상세</h1>
+    
+    
+  <p><a href="admin-orders.html">← 주문 목록</a></p>
+  <div class="grid2">
+    <div class="panel">
+      <h2>SH261006-2A07C71B <span class="status status-paid">결제완료</span> </h2>
+      <dl class="kv">
+        <dt>주문일시</dt><dd>2026-10-06 21:52</dd>
+        <dt>결제일시</dt><dd>2026-10-06 21:52</dd>
+        <dt>주문자</dt><dd>홍길동 · 010-1234-5678 · demo@example.com <span class="muted">(비회원)</span></dd>
+        <dt>받는 분</dt><dd>홍길동 · 010-1234-5678</dd>
+        <dt>배송지</dt><dd>(06236) 서울 강남구 테헤란로 152 10층</dd>
+        <dt>배송메모</dt><dd>문 앞에 놓아주세요</dd>
+      </dl>
+      <table class="tbl">
+        <thead><tr><th>상품</th><th class="r">단가</th><th class="r">수량</th><th class="r">금액</th></tr></thead>
+        <tbody><tr><td>만두순대</td><td class="r">21,800원</td><td class="r">3</td><td class="r">65,400원</td></tr></tbody>
+        <tfoot>
+          <tr><th colspan="3">상품금액</th><td class="r">65,400원</td></tr>
+          <tr><th colspan="3">배송비</th><td class="r">0원</td></tr>
+          <tr><th colspan="3">결제금액</th><td class="r"><strong>65,400원</strong></td></tr>
+          
+        </tfoot>
+      </table>
+    </div>
+    <div>
+      <div class="panel">
+        <h2>결제 정보</h2>
+        <dl class="kv">
+          <dt>PG</dt><dd>mock</dd>
+          <dt>결제수단</dt><dd>카드</dd>
+          <dt>paymentKey</dt><dd><code class="small">mock_card_SH261006-2A07C71B_1</code></dd>
+          <dt>카드</dt><dd>모의카드 4330****1234 · 승인 7415410</dd>
+          
+          
+          
+        </dl>
+        <div class="btn-row">
+          <form method="post" action="#"><input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls"><button class="btn btn-sm btn-ghost">PG 상태 동기화</button></form>
+          
+        </div>
+      </div>
+
+      
+      <div class="panel">
+        <h2>배송 처리</h2>
+        <form method="post" action="#" class="stack">
+          <input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+          <div class="row2">
+            <label>택배사<select name="courier"><option value="cj" >CJ대한통운</option><option value="epost" >우체국택배</option><option value="lotte" >롯데택배</option><option value="hanjin" >한진택배</option><option value="logen" >로젠택배</option></select></label>
+            <label>송장번호<input name="trackingNo" value="" inputmode="numeric"></label>
+          </div>
+          
+          <div class="btn-row"><button class="btn btn-sm " name="to" value="preparing">상품준비중(으)로 변경</button><button class="btn btn-sm btn-primary" name="to" value="shipped">배송중(으)로 변경</button></div>
+        </form>
+      </div>
+
+      
+      <div class="panel">
+        <h2>결제 취소·환불</h2>
+        <form method="post" action="#" class="stack" data-confirm="결제를 취소합니다. 되돌릴 수 없습니다. 진행할까요?">
+          <input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+          <p class="small muted">취소 가능 잔액 <strong>65,400원</strong>. 금액을 비우면 잔액 전체 취소.</p>
+          <div class="row2">
+            <label>취소 금액<input name="amount" inputmode="numeric" placeholder="65400"></label>
+            <label>사유<input name="reason" required value="고객 요청"></label>
+          </div>
+          
+          <button class="btn btn-danger btn-sm">취소 실행</button>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2>관리자 메모</h2>
+        <form method="post" action="#" class="stack">
+          <input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+          <textarea name="memo" rows="3"></textarea>
+          <button class="btn btn-sm">저장</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="panel">
+    <h2>처리 이력</h2>
+    <table class="tbl"><thead><tr><th>일시</th><th>구분</th><th>내용</th><th>처리자</th></tr></thead>
+    <tbody><tr><td>2026-10-06 21:52</td><td>paid</td><td>결제 완료 (카드)</td><td>system</td></tr><tr><td>2026-10-06 21:52</td><td>created</td><td>주문 생성 (65400원)</td><td>guest</td></tr></tbody></table>
+  </div>
+  </main>
+</div>
+<script src="assets/admin.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>주문서 작성 | 신의한순대</title>
+<meta name="description" content="1997년부터 이어온 다윗식품의 순대. HACCP 인증 시설에서 정직하게 만듭니다.">
+<meta property="og:title" content="주문서 작성 | 신의한순대">
+<meta property="og:description" content="1997년부터 이어온 다윗식품의 순대. HACCP 인증 시설에서 정직하게 만듭니다.">
+<meta property="og:type" content="website">
+<meta name="csrf-token" content="VSjUOva-wPcWLMmCbBdtYaDnkVkVq6HY">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta property="og:image" content="assets/hero.jpg">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Myeongjo:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class=""><div style="position:sticky;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
+<a class="skip" href="#main">본문 바로가기</a>
+<header class="site-header">
+  <div class="topbar"><div class="wrap">
+    <span>HACCP 인증 시설 · 1997년부터 다윗식품</span>
+    <nav class="toplinks">
+      <a href="login.html">로그인</a><a href="signup.html">회원가입</a>
+      <a href="orders-lookup.html">주문조회</a>
+      <a href="cs.html">고객센터</a>
+    </nav>
+  </div></div>
+  <div class="mainbar"><div class="wrap">
+    <a href="index.html" class="logo" aria-label="신의한순대 홈"><img src="assets/logo.png" alt="신의한순대" class="logo-img"></a>
+    <nav class="gnb" aria-label="주 메뉴">
+      <a href="brand.html">브랜드</a>
+      <a href="products.html">전체상품</a>
+      <a href="partnership.html">창업·납품 문의</a>
+      <a href="cs.html">배송안내</a>
+    </nav>
+    <a href="cart.html" class="cart-link" aria-label="장바구니">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg>
+      <span class="cart-count" data-cart-count hidden>0</span>
+    </a>
+    <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" data-menu-toggle>
+      <span></span><span></span><span></span>
+    </button>
+  </div></div>
+</header>
+<main id="main">
+
+
+  <section class="section"><div class="wrap">
+    <h1 class="page-title">주문서 작성</h1>
+    <div class="notice-box">비회원으로 주문합니다. <a href="login.html">로그인</a>하시면 주문 내역을 편하게 확인할 수 있어요.</div>
+    <form class="checkout" data-checkout novalidate>
+      <div class="checkout-main">
+        <fieldset class="box">
+          <legend>주문 상품</legend>
+          <div data-co-items><p class="muted">불러오는 중…</p></div>
+        </fieldset>
+        <fieldset class="box">
+          <legend>주문자 정보</legend>
+          <div class="row2">
+            <label>이름<input name="ordererName" required maxlength="30" autocomplete="name" value=""></label>
+            <label>휴대폰<input name="ordererPhone" required inputmode="tel" autocomplete="tel" placeholder="010-0000-0000" value=""></label>
+          </div>
+          <label>이메일 <span class="muted">(주문 안내 수신)</span><input name="ordererEmail" type="email" autocomplete="email" value=""></label>
+        </fieldset>
+        <fieldset class="box">
+          <legend>배송지</legend>
+          <label class="check"><input type="checkbox" data-same-orderer> 주문자 정보와 동일</label>
+          <div class="row2">
+            <label>받는 분<input name="recvName" required maxlength="30"></label>
+            <label>휴대폰<input name="recvPhone" required inputmode="tel" placeholder="010-0000-0000"></label>
+          </div>
+          <div class="row-zip">
+            <label>우편번호<input name="zipcode" required readonly value=""></label>
+            <button type="button" class="btn btn-ghost" data-find-address>주소 검색</button>
+          </div>
+          <label>주소<input name="addr1" required readonly value=""></label>
+          <label>상세주소<input name="addr2" required maxlength="200" value=""></label>
+          <div data-postcode-layer class="postcode-layer" hidden><button type="button" class="postcode-close" data-postcode-close aria-label="닫기">×</button><div data-postcode-embed></div></div>
+          <label>배송 메모
+            <select name="memoPreset" data-memo-preset>
+              <option value="">선택하세요</option>
+              <option>문 앞에 놓아주세요</option>
+              <option>부재 시 경비실에 맡겨주세요</option>
+              <option>배송 전 연락 바랍니다</option>
+              <option value="__custom">직접 입력</option>
+            </select>
+          </label>
+          <input name="memo" maxlength="200" placeholder="배송 메모 직접 입력" data-memo-custom hidden>
+          
+        </fieldset>
+        <fieldset class="box">
+          <legend>결제 수단</legend>
+          <div class="notice-box warn">개발 모드: 모의 결제(PG_PROVIDER=mock)로 동작합니다. 실제 결제는 일어나지 않습니다.</div>
+        </fieldset>
+      </div>
+      <aside class="summary sticky">
+        <dl>
+          <dt>상품금액</dt><dd data-sum-items>0원</dd>
+          <dt>배송비</dt><dd data-sum-ship>0원</dd>
+          <dt class="total">최종 결제금액</dt><dd class="total" data-sum-total>0원</dd>
+        </dl>
+        <div class="errors" data-errors role="alert" hidden></div>
+        <label class="check small"><input type="checkbox" name="agreeTerms" value="1" required> 주문 상품 정보와 결제 금액을 확인했으며, <a href="terms.html" target="_blank">이용약관</a> 및 <a href="privacy.html" target="_blank">개인정보 수집·이용</a>, 냉동식품 특성상 단순 변심 교환·반품 불가에 동의합니다.</label>
+        <button type="submit" class="btn btn-primary btn-block btn-lg" data-pay-btn disabled>결제하기</button>
+      </aside>
+    </form>
+  </div></section>
+  <script type="application/json" id="pg-config">{"provider":"mock"}</script>
+  <script type="application/json" id="checkout-user">null</script>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="footer-logo"><img src="assets/logo-light.png" alt="신의한순대" class="logo-img"></div>
+      <p class="footer-slogan">신의 한 수, 맛의 깊이를 더하다</p>
+      <p class="cs-box"><strong>고객센터 054-372-2325</strong><br>평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00, 주말·공휴일 휴무)</p>
+    </div>
+    <div class="biz-info">
+      <p>
+        상호 다윗식품 · 대표 신흥훈 · 사업자등록번호 542-05-03340
+        <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5420503340" target="_blank" rel="noopener">[사업자정보확인]</a><br>
+        통신판매업신고 신고 진행 중 · 개인정보보호책임자 신흥훈<br>
+        주소 경상북도 청도군 월곡1길 29 · 이메일 huny4097@naver.com
+      </p>
+      <nav class="footer-links">
+        <a href="terms.html">이용약관</a>
+        <a href="privacy.html"><strong>개인정보처리방침</strong></a>
+        <a href="cs.html">배송·교환·환불</a>
+        <a href="partnership.html">창업·납품 문의</a>
+      </nav>
+      <p class="copyright">© 2026 다윗식품. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/app.js" defer></script>
+<script src="assets/demo.js" defer></script>
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" defer></script><script src="assets/checkout.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>회원관리 | 신의한순대 관리자</title>
+<meta name="csrf-token" content="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/admin.css">
+</head>
+<body><div style="position:sticky;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
+<div class="admin">
+  <aside class="side">
+    <a href="admin.html" class="side-logo">신의한순대<small>관리자</small></a>
+    <nav>
+      <a href="admin.html" class="">대시보드</a><a href="admin-orders.html" class="">주문관리</a><a href="admin-products.html" class="">상품관리</a><a href="admin-brand-images.html" class="">브랜드 이미지</a><a href="admin-members.html" class="on">회원관리</a><a href="admin-leads.html" class="">창업·납품 문의</a><a href="admin-settings.html" class="">쇼핑몰 설정</a>
+    </nav>
+    <div class="side-foot">
+      <a href="index.html" target="_blank" rel="noopener">쇼핑몰 보기 ↗</a>
+      <form method="post" action="#"><input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls"><button type="submit">로그아웃 (admin)</button></form>
+    </div>
+  </aside>
+  <main class="content">
+    <h1>회원관리</h1>
+    
+    
+  <nav class="tabs">
+    <a href="?filter=" class="on">전체</a><a href="?filter=consumer" class="">일반</a><a href="?filter=business" class="">사업자</a><a href="?filter=pending" class="">사업자 승인대기</a>
+  </nav>
+  <form class="filters" method="get"><input type="hidden" name="filter" value=""><input name="q" placeholder="이메일·이름·연락처·상호" value=""><button class="btn">검색</button></form>
+  <div class="panel"><table class="tbl">
+    <thead><tr><th>#</th><th>가입일</th><th>이메일</th><th>이름/연락처</th><th>유형</th><th>사업자 정보</th><th>승인</th><th></th></tr></thead>
+    <tbody></tbody></table></div>
+  </main>
+</div>
+<script src="assets/admin.js" defer></script>
+</body>
+</html>
