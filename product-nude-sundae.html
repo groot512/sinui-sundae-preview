@@ -9,7 +9,7 @@
 <meta property="og:title" content="누드순대 | 신의한순대">
 <meta property="og:description" content="누드순대  - 순대 본연의 맛을 그대로">
 <meta property="og:type" content="website">
-<meta name="csrf-token" content="VSjUOva-wPcWLMmCbBdtYaDnkVkVq6HY">
+<meta name="csrf-token" content="KhdrHIlDd3MVzaDk-gZlo62MWAflCWvu">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
 <meta property="og:image" content="assets/hero.jpg">
@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Myeongjo:wght@400;700;800&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class=""><div style="position:sticky;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
+<body class=""><div id="demo-bar" style="position:relative;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
 <a class="skip" href="#main">본문 바로가기</a>
 <header class="site-header">
   <div class="topbar"><div class="wrap">
@@ -59,7 +59,7 @@
       <p class="eyebrow">순대 · 냉동</p>
       <h1>누드순대 <small></small></h1>
       <p class="tagline">순대 본연의 맛을 그대로</p>
-      <p class="pd-price"><span class="price muted">가격 준비중</span></p>
+      <p class="pd-price" data-price-pid="6"><span class="price muted">가격 준비중</span></p>
       <dl class="pd-meta">
         <dt>배송</dt><dd>냉동 택배 · 4,500원 (50,000원 이상 무료)</dd>
         <dt>보관</dt><dd>냉동보관 (-18℃ 이하)</dd>
@@ -94,20 +94,21 @@
     <div>
       <div class="footer-logo"><img src="assets/logo-light.png" alt="신의한순대" class="logo-img"></div>
       <p class="footer-slogan">신의 한 수, 맛의 깊이를 더하다</p>
-      <p class="cs-box"><strong>고객센터 054-372-2325</strong><br>평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00, 주말·공휴일 휴무)</p>
+      <p class="cs-box"><strong>고객센터 <span data-s="biz_phone">054-372-2325</span></strong><br><span data-s="cs_hours">평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00, 주말·공휴일 휴무)</span></p>
     </div>
     <div class="biz-info">
       <p>
-        상호 다윗식품 · 대표 신흥훈 · 사업자등록번호 542-05-03340
-        <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5420503340" target="_blank" rel="noopener">[사업자정보확인]</a><br>
-        통신판매업신고 신고 진행 중 · 개인정보보호책임자 신흥훈<br>
-        주소 경상북도 청도군 월곡1길 29 · 이메일 huny4097@naver.com
+        상호 <span data-s="biz_company">다윗식품</span> · 대표 <span data-s="biz_ceo">신흥훈</span> · 사업자등록번호 <span data-s="biz_no">542-05-03340</span>
+        <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5420503340" target="_blank" rel="noopener" data-biz-link>[사업자정보확인]</a><br>
+        통신판매업신고 <span data-s="biz_ecommerce_no" data-empty="신고 진행 중">신고 진행 중</span> · 개인정보보호책임자 <span data-s="biz_privacy_officer">신흥훈</span><br>
+        주소 <span data-s="biz_address">경상북도 청도군 월곡1길 29</span> · 이메일 <span data-s="biz_email">huny4097@naver.com</span>
       </p>
       <nav class="footer-links">
         <a href="terms.html">이용약관</a>
         <a href="privacy.html"><strong>개인정보처리방침</strong></a>
         <a href="cs.html">배송·교환·환불</a>
         <a href="partnership.html">창업·납품 문의</a>
+        <a href="admin.html" class="admin-link">관리자</a>
       </nav>
       <p class="copyright">© 2026 다윗식품. All rights reserved.</p>
     </div>

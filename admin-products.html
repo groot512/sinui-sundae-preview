@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>상품관리 | 신의한순대 관리자</title>
-<meta name="csrf-token" content="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+<meta name="csrf-token" content="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="assets/admin.css">
 </head>
-<body><div style="position:sticky;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
+<body><div id="demo-bar" style="position:relative;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
 <div class="admin">
   <aside class="side">
     <a href="admin.html" class="side-logo">신의한순대<small>관리자</small></a>
@@ -19,7 +19,7 @@
     </nav>
     <div class="side-foot">
       <a href="index.html" target="_blank" rel="noopener">쇼핑몰 보기 ↗</a>
-      <form method="post" action="#"><input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls"><button type="submit">로그아웃 (admin)</button></form>
+      <form method="post" action="#"><input type="hidden" name="_csrf" value="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P"><button type="submit">로그아웃 (admin)</button></form>
     </div>
   </aside>
   <main class="content">
@@ -27,59 +27,71 @@
     
     
   <p><a class="btn btn-primary" href="admin-products.html">+ 상품 등록</a></p>
-  <div class="panel"><table class="tbl">
-    <thead><tr><th></th><th>상품명</th><th>상태</th><th class="r">판매가</th><th class="r">도매가</th><th class="r">재고</th><th>정렬</th><th></th></tr></thead>
+  <form method="post" action="#" class="panel" data-demo-form="products-bulk">
+    <input type="hidden" name="_csrf" value="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P">
+    <div class="panel-head"><h2>가격·재고 빠른 수정</h2><span class="muted small">값을 고친 뒤 아래 '변경사항 저장'을 누르면 쇼핑몰에 바로 반영됩니다.</span></div>
+    <table class="tbl">
+    <thead><tr><th></th><th>상품명</th><th>판매 상태</th><th class="r">판매가(원)</th><th class="r">정가(할인 전)</th><th class="r">사업자 도매가</th><th class="r">재고</th><th></th></tr></thead>
     <tbody><tr>
       <td><img src="assets/products__v2__gogi-chal-sundae__thumb.jpg" alt="" class="thumb"></td>
-      <td><a href="admin-product-1.html">고기찰순대</a> <small class="muted">2kg</small><br><small class="muted">/products/gogi-chal-sundae</small></td>
-      <td><span class="pstatus pstatus-active">판매중</span></td>
-      <td class="r">19,800원</td><td class="r">15,000원</td>
-      <td class="r ">98</td>
-      <td>1</td>
+      <td><a href="admin-product-1.html">고기찰순대</a> <small class="muted">2kg</small><br><small class="muted">상세 수정 →</small></td>
+      <td><input type="hidden" name="ids" value="1"><select name="status_1" aria-label="고기찰순대 판매 상태"><option value="active" selected>판매중</option><option value="soldout" >품절</option><option value="coming" >출시예정</option><option value="hidden" >숨김</option></select></td>
+      <td class="r"><input class="num-in" name="price_1" value="19800" inputmode="numeric" aria-label="고기찰순대 판매가"></td>
+      <td class="r"><input class="num-in" name="list_price_1" value="" inputmode="numeric" placeholder="없음" aria-label="고기찰순대 정가"></td>
+      <td class="r"><input class="num-in" name="wholesale_price_1" value="15000" inputmode="numeric" placeholder="없음" aria-label="고기찰순대 도매가"></td>
+      <td class="r"><input class="num-in short " name="stock_1" value="98" inputmode="numeric" aria-label="고기찰순대 재고"></td>
       <td><a href="product-gogi-chal-sundae.html" target="_blank" rel="noopener">보기 ↗</a></td>
     </tr><tr>
       <td><img src="assets/products__v2__traditional-sundae__thumb.jpg" alt="" class="thumb"></td>
-      <td><a href="admin-product-2.html">전통순대</a> <small class="muted">2kg</small><br><small class="muted">/products/traditional-sundae</small></td>
-      <td><span class="pstatus pstatus-active">판매중</span></td>
-      <td class="r">19,800원</td><td class="r">15,000원</td>
-      <td class="r ">99</td>
-      <td>2</td>
+      <td><a href="admin-product-2.html">전통순대</a> <small class="muted">2kg</small><br><small class="muted">상세 수정 →</small></td>
+      <td><input type="hidden" name="ids" value="2"><select name="status_2" aria-label="전통순대 판매 상태"><option value="active" selected>판매중</option><option value="soldout" >품절</option><option value="coming" >출시예정</option><option value="hidden" >숨김</option></select></td>
+      <td class="r"><input class="num-in" name="price_2" value="19800" inputmode="numeric" aria-label="전통순대 판매가"></td>
+      <td class="r"><input class="num-in" name="list_price_2" value="" inputmode="numeric" placeholder="없음" aria-label="전통순대 정가"></td>
+      <td class="r"><input class="num-in" name="wholesale_price_2" value="15000" inputmode="numeric" placeholder="없음" aria-label="전통순대 도매가"></td>
+      <td class="r"><input class="num-in short " name="stock_2" value="99" inputmode="numeric" aria-label="전통순대 재고"></td>
       <td><a href="product-traditional-sundae.html" target="_blank" rel="noopener">보기 ↗</a></td>
     </tr><tr>
       <td><img src="assets/products__v2__makchang-sundae__thumb.jpg" alt="" class="thumb"></td>
-      <td><a href="admin-product-3.html">막창순대</a> <small class="muted">2kg</small><br><small class="muted">/products/makchang-sundae</small></td>
-      <td><span class="pstatus pstatus-active">판매중</span></td>
-      <td class="r">25,800원</td><td class="r">19,500원</td>
-      <td class="r ">99</td>
-      <td>3</td>
+      <td><a href="admin-product-3.html">막창순대</a> <small class="muted">2kg</small><br><small class="muted">상세 수정 →</small></td>
+      <td><input type="hidden" name="ids" value="3"><select name="status_3" aria-label="막창순대 판매 상태"><option value="active" selected>판매중</option><option value="soldout" >품절</option><option value="coming" >출시예정</option><option value="hidden" >숨김</option></select></td>
+      <td class="r"><input class="num-in" name="price_3" value="25800" inputmode="numeric" aria-label="막창순대 판매가"></td>
+      <td class="r"><input class="num-in" name="list_price_3" value="" inputmode="numeric" placeholder="없음" aria-label="막창순대 정가"></td>
+      <td class="r"><input class="num-in" name="wholesale_price_3" value="19500" inputmode="numeric" placeholder="없음" aria-label="막창순대 도매가"></td>
+      <td class="r"><input class="num-in short " name="stock_3" value="99" inputmode="numeric" aria-label="막창순대 재고"></td>
       <td><a href="product-makchang-sundae.html" target="_blank" rel="noopener">보기 ↗</a></td>
     </tr><tr>
       <td><img src="assets/products__v2__mandu-sundae__thumb.jpg" alt="" class="thumb"></td>
-      <td><a href="admin-product-4.html">만두순대</a> <small class="muted">2kg</small><br><small class="muted">/products/mandu-sundae</small></td>
-      <td><span class="pstatus pstatus-active">판매중</span></td>
-      <td class="r">21,800원</td><td class="r">16,500원</td>
-      <td class="r ">97</td>
-      <td>4</td>
+      <td><a href="admin-product-4.html">만두순대</a> <small class="muted">2kg</small><br><small class="muted">상세 수정 →</small></td>
+      <td><input type="hidden" name="ids" value="4"><select name="status_4" aria-label="만두순대 판매 상태"><option value="active" selected>판매중</option><option value="soldout" >품절</option><option value="coming" >출시예정</option><option value="hidden" >숨김</option></select></td>
+      <td class="r"><input class="num-in" name="price_4" value="21800" inputmode="numeric" aria-label="만두순대 판매가"></td>
+      <td class="r"><input class="num-in" name="list_price_4" value="" inputmode="numeric" placeholder="없음" aria-label="만두순대 정가"></td>
+      <td class="r"><input class="num-in" name="wholesale_price_4" value="16500" inputmode="numeric" placeholder="없음" aria-label="만두순대 도매가"></td>
+      <td class="r"><input class="num-in short " name="stock_4" value="97" inputmode="numeric" aria-label="만두순대 재고"></td>
       <td><a href="product-mandu-sundae.html" target="_blank" rel="noopener">보기 ↗</a></td>
     </tr><tr>
       <td><img src="assets/products__placeholder.svg" alt="" class="thumb"></td>
-      <td><a href="admin-product-5.html">순대볶음소스</a> <small class="muted">2kg</small><br><small class="muted">/products/sundae-bokkeum-sauce</small></td>
-      <td><span class="pstatus pstatus-hidden">숨김</span></td>
-      <td class="r">15,000원</td><td class="r">11,000원</td>
-      <td class="r ">50</td>
-      <td>5</td>
+      <td><a href="admin-product-5.html">순대볶음소스</a> <small class="muted">2kg</small><br><small class="muted">상세 수정 →</small></td>
+      <td><input type="hidden" name="ids" value="5"><select name="status_5" aria-label="순대볶음소스 판매 상태"><option value="active" >판매중</option><option value="soldout" >품절</option><option value="coming" >출시예정</option><option value="hidden" selected>숨김</option></select></td>
+      <td class="r"><input class="num-in" name="price_5" value="15000" inputmode="numeric" aria-label="순대볶음소스 판매가"></td>
+      <td class="r"><input class="num-in" name="list_price_5" value="" inputmode="numeric" placeholder="없음" aria-label="순대볶음소스 정가"></td>
+      <td class="r"><input class="num-in" name="wholesale_price_5" value="11000" inputmode="numeric" placeholder="없음" aria-label="순대볶음소스 도매가"></td>
+      <td class="r"><input class="num-in short " name="stock_5" value="50" inputmode="numeric" aria-label="순대볶음소스 재고"></td>
       <td><a href="product-sundae-bokkeum-sauce.html" target="_blank" rel="noopener">보기 ↗</a></td>
     </tr><tr>
       <td><img src="assets/products__v2__nude-sundae__thumb.jpg" alt="" class="thumb"></td>
-      <td><a href="admin-product-6.html">누드순대</a> <small class="muted"></small><br><small class="muted">/products/nude-sundae</small></td>
-      <td><span class="pstatus pstatus-coming">출시예정</span></td>
-      <td class="r">0원</td><td class="r">0원</td>
-      <td class="r neg">0</td>
-      <td>6</td>
+      <td><a href="admin-product-6.html">누드순대</a> <small class="muted"></small><br><small class="muted">상세 수정 →</small></td>
+      <td><input type="hidden" name="ids" value="6"><select name="status_6" aria-label="누드순대 판매 상태"><option value="active" >판매중</option><option value="soldout" >품절</option><option value="coming" selected>출시예정</option><option value="hidden" >숨김</option></select></td>
+      <td class="r"><input class="num-in" name="price_6" value="0" inputmode="numeric" aria-label="누드순대 판매가"></td>
+      <td class="r"><input class="num-in" name="list_price_6" value="" inputmode="numeric" placeholder="없음" aria-label="누드순대 정가"></td>
+      <td class="r"><input class="num-in" name="wholesale_price_6" value="" inputmode="numeric" placeholder="없음" aria-label="누드순대 도매가"></td>
+      <td class="r"><input class="num-in short neg" name="stock_6" value="0" inputmode="numeric" aria-label="누드순대 재고"></td>
       <td><a href="product-nude-sundae.html" target="_blank" rel="noopener">보기 ↗</a></td>
-    </tr></tbody></table></div>
+    </tr></tbody></table>
+    <div class="btn-row" style="margin-top:12px"><button class="btn btn-primary">변경사항 저장</button></div>
+  </form>
   </main>
 </div>
 <script src="assets/admin.js" defer></script>
+<script src="assets/demo.js" defer></script>
 </body>
 </html>

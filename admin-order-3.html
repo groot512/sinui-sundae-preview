@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>주문 상세 | 신의한순대 관리자</title>
-<meta name="csrf-token" content="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+<meta name="csrf-token" content="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="assets/admin.css">
 </head>
-<body><div style="position:sticky;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
+<body><div id="demo-bar" style="position:relative;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
 <div class="admin">
   <aside class="side">
     <a href="admin.html" class="side-logo">신의한순대<small>관리자</small></a>
@@ -19,7 +19,7 @@
     </nav>
     <div class="side-foot">
       <a href="index.html" target="_blank" rel="noopener">쇼핑몰 보기 ↗</a>
-      <form method="post" action="#"><input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls"><button type="submit">로그아웃 (admin)</button></form>
+      <form method="post" action="#"><input type="hidden" name="_csrf" value="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P"><button type="submit">로그아웃 (admin)</button></form>
     </div>
   </aside>
   <main class="content">
@@ -29,9 +29,9 @@
   <p><a href="admin-orders.html">← 주문 목록</a></p>
   <div class="grid2">
     <div class="panel">
-      <h2>SH261006-2F65D915 <span class="status status-waiting_deposit">입금대기</span> </h2>
+      <h2>SH261006-F06283A4 <span class="status status-waiting_deposit">입금대기</span> </h2>
       <dl class="kv">
-        <dt>주문일시</dt><dd>2026-10-06 21:52</dd>
+        <dt>주문일시</dt><dd>2026-10-06 22:29</dd>
         <dt>결제일시</dt><dd>-</dd>
         <dt>주문자</dt><dd>홍길동 · 010-1234-5678 · demo@example.com <span class="muted">(비회원)</span></dd>
         <dt>받는 분</dt><dd>홍길동 · 010-1234-5678</dd>
@@ -55,15 +55,15 @@
         <dl class="kv">
           <dt>PG</dt><dd>mock</dd>
           <dt>결제수단</dt><dd>가상계좌</dd>
-          <dt>paymentKey</dt><dd><code class="small">mock_vbank_SH261006-2F65D915_1</code></dd>
+          <dt>paymentKey</dt><dd><code class="small">mock_vbank_SH261006-F06283A4_1</code></dd>
           
           
-          <dt>가상계좌</dt><dd>88 5621186617234 (기한 2026-10-09 21:52)</dd>
+          <dt>가상계좌</dt><dd>88 5621114864394 (기한 2026-10-09 22:29)</dd>
           
         </dl>
         <div class="btn-row">
-          <form method="post" action="#"><input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls"><button class="btn btn-sm btn-ghost">PG 상태 동기화</button></form>
-          <form method="post" action="#"><input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls"><button class="btn btn-sm btn-ghost">[개발] 입금 처리</button></form>
+          <form method="post" action="#"><input type="hidden" name="_csrf" value="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P"><button class="btn btn-sm btn-ghost">PG 상태 동기화</button></form>
+          <form method="post" action="#"><input type="hidden" name="_csrf" value="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P"><button class="btn btn-sm btn-ghost">[개발] 입금 처리</button></form>
         </div>
       </div>
 
@@ -73,7 +73,7 @@
       <div class="panel">
         <h2>결제 취소·환불</h2>
         <form method="post" action="#" class="stack" data-confirm="결제를 취소합니다. 되돌릴 수 없습니다. 진행할까요?">
-          <input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+          <input type="hidden" name="_csrf" value="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P">
           <p class="small muted">취소 가능 잔액 <strong>24,300원</strong>. 금액을 비우면 잔액 전체 취소.</p>
           <div class="row2">
             <label>취소 금액<input name="amount" inputmode="numeric" placeholder="24300"></label>
@@ -87,7 +87,7 @@
       <div class="panel">
         <h2>관리자 메모</h2>
         <form method="post" action="#" class="stack">
-          <input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+          <input type="hidden" name="_csrf" value="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P">
           <textarea name="memo" rows="3"></textarea>
           <button class="btn btn-sm">저장</button>
         </form>
@@ -97,10 +97,11 @@
   <div class="panel">
     <h2>처리 이력</h2>
     <table class="tbl"><thead><tr><th>일시</th><th>구분</th><th>내용</th><th>처리자</th></tr></thead>
-    <tbody><tr><td>2026-10-06 21:52</td><td>vbank_issued</td><td>가상계좌 발급, 입금 대기</td><td>system</td></tr><tr><td>2026-10-06 21:52</td><td>created</td><td>주문 생성 (24300원)</td><td>guest</td></tr></tbody></table>
+    <tbody><tr><td>2026-10-06 22:29</td><td>vbank_issued</td><td>가상계좌 발급, 입금 대기</td><td>system</td></tr><tr><td>2026-10-06 22:29</td><td>created</td><td>주문 생성 (24300원)</td><td>guest</td></tr></tbody></table>
   </div>
   </main>
 </div>
 <script src="assets/admin.js" defer></script>
+<script src="assets/demo.js" defer></script>
 </body>
 </html>

@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>주문관리 | 신의한순대 관리자</title>
-<meta name="csrf-token" content="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+<meta name="csrf-token" content="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="assets/admin.css">
 </head>
-<body><div style="position:sticky;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
+<body><div id="demo-bar" style="position:relative;top:0;z-index:999;background:#BD8243;color:#fff;text-align:center;font:600 13px/1.4 Pretendard,'Malgun Gothic',sans-serif;padding:7px 12px">데모 미리보기 · 주문·결제·로그인·관리자 저장은 동작하지 않습니다 · 이미지는 AI 디자인 시안이며 가격은 임시값입니다</div>
 <div class="admin">
   <aside class="side">
     <a href="admin.html" class="side-logo">신의한순대<small>관리자</small></a>
@@ -19,7 +19,7 @@
     </nav>
     <div class="side-foot">
       <a href="index.html" target="_blank" rel="noopener">쇼핑몰 보기 ↗</a>
-      <form method="post" action="#"><input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls"><button type="submit">로그아웃 (admin)</button></form>
+      <form method="post" action="#"><input type="hidden" name="_csrf" value="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P"><button type="submit">로그아웃 (admin)</button></form>
     </div>
   </aside>
   <main class="content">
@@ -37,7 +37,7 @@
 
   <div class="panel">
     <form id="bulk-form" method="post" action="#" class="bulk">
-      <input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+      <input type="hidden" name="_csrf" value="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P">
       <span class="muted">선택한 주문을</span>
       <select name="to"><option value="preparing">상품준비중으로</option><option value="delivered">배송완료로</option></select>
       <button class="btn btn-sm">일괄 변경</button>
@@ -47,8 +47,8 @@
     <thead><tr><th><input type="checkbox" data-check-all aria-label="전체 선택"></th><th>주문일시</th><th>주문번호</th><th>주문자</th><th>상품</th><th class="r">결제금액</th><th>결제</th><th>상태</th><th>송장</th></tr></thead>
     <tbody><tr>
       <td><input type="checkbox" name="ids" value="3" form="bulk-form" aria-label="선택"></td>
-      <td>2026-10-06 21:52</td>
-      <td><a href="admin-order-3.html">SH261006-2F65D915</a></td>
+      <td>2026-10-06 22:29</td>
+      <td><a href="admin-order-3.html">SH261006-F06283A4</a></td>
       <td>홍길동<br><small class="muted">010-1234-5678</small></td>
       <td>전통순대</td>
       <td class="r">24,300원</td>
@@ -57,8 +57,8 @@
       <td></td>
     </tr><tr>
       <td><input type="checkbox" name="ids" value="2" form="bulk-form" aria-label="선택"></td>
-      <td>2026-10-06 21:52</td>
-      <td><a href="admin-order-2.html">SH261006-2A07C71B</a></td>
+      <td>2026-10-06 22:29</td>
+      <td><a href="admin-order-2.html">SH261006-866C4A27</a></td>
       <td>홍길동<br><small class="muted">010-1234-5678</small></td>
       <td>만두순대</td>
       <td class="r">65,400원</td>
@@ -67,8 +67,8 @@
       <td></td>
     </tr><tr>
       <td><input type="checkbox" name="ids" value="1" form="bulk-form" aria-label="선택"></td>
-      <td>2026-10-06 21:52</td>
-      <td><a href="admin-order-1.html">SH261006-79B24C20</a></td>
+      <td>2026-10-06 22:29</td>
+      <td><a href="admin-order-1.html">SH261006-E6C5BDFE</a></td>
       <td>홍길동<br><small class="muted">010-1234-5678</small></td>
       <td>고기찰순대 외 1건</td>
       <td class="r">65,400원</td>
@@ -83,7 +83,7 @@
     <h2>송장 일괄 등록 (CSV)</h2>
     <p class="muted small">형식: <code>주문번호,택배사코드,송장번호</code> (첫 줄 헤더 가능). 택배사코드: cj=CJ대한통운, epost=우체국택배, lotte=롯데택배, hanjin=한진택배, logen=로젠택배. 등록 시 상태가 '배송중'으로 바뀝니다.</p>
     <form method="post" action="#" enctype="multipart/form-data" class="inline-form">
-      <input type="hidden" name="_csrf" value="-QXj70p2grnilwPhx6p2CQPkmb4_-zls">
+      <input type="hidden" name="_csrf" value="UjrSjzOVUag2bDnS49ghu7omI9sNiO6P">
       <input type="file" name="file" accept=".csv,text/csv" required>
       <button class="btn btn-sm">업로드</button>
     </form>
@@ -91,5 +91,6 @@
   </main>
 </div>
 <script src="assets/admin.js" defer></script>
+<script src="assets/demo.js" defer></script>
 </body>
 </html>
